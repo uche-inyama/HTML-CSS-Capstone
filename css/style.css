@@ -1,3 +1,30 @@
 header {
+  color: white;
+  height: 100px;
+}
+
+header .header-wrapper {
   background-color: #eb765d;
+  display: grid;
+  height: 100%;
+  padding: 10px;
+}
+
+header .header-wrapper .title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+header .header-wrapper .fa-map-marker-alt {
+  justify-self: right;
+}
+
+header .header-wrapper nav {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-items: center;
+  align-items: center;
 }
