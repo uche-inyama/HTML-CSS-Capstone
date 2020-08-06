@@ -12,8 +12,14 @@ header .header-wrapper {
 
 header .header-wrapper .title {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: 2fr 3fr;
+}
+
+header .header-wrapper h1 {
+  padding-top: 7px;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding-left: 10px;
 }
 
 header .header-wrapper .fa-map-marker-alt {
