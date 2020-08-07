@@ -61,7 +61,7 @@ main .main-wrapper h2 {
   justify-self: center;
 }
 
-main form {
+main .main-wrapper form {
   background-color: whitesmoke;
   display: grid;
   grid-gap: 5px;
@@ -71,19 +71,31 @@ main form {
   margin: 0 10px;
 }
 
-main form label, main form input {
+main .main-wrapper form label, main .main-wrapper form input {
   padding: 5px 0;
   width: 90%;
   align-self: center;
 }
 
-main form .submit {
+main .main-wrapper form .submit {
   background-color: #eb765d;
   cursor: pointer;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 20px;
   padding: 10px;
   text-align: center;
   width: 90%;
+}
+
+main .main-wrapper .how-it-works {
+  margin-top: 10px;
+}
+
+main .main-wrapper .how-it-works p {
+  font-weight: 600;
+  margin-left: 10px;
+  background-color: whitesmoke;
+  padding: 5px;
+  width: 30%;
 }
