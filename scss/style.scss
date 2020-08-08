@@ -181,5 +181,101 @@ header{
   }
 }
 
+
+/* result section */
+
+.main-wrapper{
+  .image-gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-rows: repeat(6, 300px);
+    .image-wrapper{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 5fr 1fr;
+      .p-7, 
+      .p-8, 
+      .p-9, 
+      .p-10{
+        display: none;
+      }
+    }
+    .imag-1{
+      background: url("../asset/image/canada.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+    .imag-2{
+      background: url("../asset/image/denmark.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  
+    .imag-3{
+      background: url("../asset/image/germany.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  
+    .imag-4{
+      background: url("../asset/image/london.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  
+    .imag-5{
+      background: url("../asset/image/netherland.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  
+    .imag-6{
+      background: url("../asset/image/newark.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+    .imag-7{
+      background: url("../asset/image/dubai.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      display: none;
+   
+    }
+    .imag-8{
+      background: url("../asset/image/usa.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      display: none;
+   
+    }
+    .imag-9{
+      background: url("../asset/image/japan.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      display: none;
+   
+    }
+
+    .imag-10{
+      background: url("../asset/image/china.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      display: none;
+    
+    }
+  }
+}
+
 @import 'tablet';
 @import 'desktop'

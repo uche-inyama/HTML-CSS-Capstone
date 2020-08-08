@@ -2,7 +2,7 @@
   .main-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 500px 490px 690px;
+    // grid-template-rows: 500px 490px 690px;
     .hero{
       form{
         label{
@@ -26,7 +26,6 @@
         }
       }
     }
- 
     .how-it-works{
       justify-self: center;
     }
@@ -80,8 +79,20 @@
         background-color: $secondary;
       }
     }
+    .image-gallery{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px,1fr));;
+      grid-gap: 10px;
+      grid-template-rows: repeat(3, 400px);
+      .imag-7, .imag-8, .imag-9, .imag-10 {
+        display: block;
+      }
+      // .p-7, .p-8, 
+      // .p-9, .p-10{
+      //   display: none;
+      // }
+    }
   }
-  
   .footer-wrapper{
     display: grid;
     grid-template-columns: 1fr;
@@ -138,7 +149,6 @@
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
-
     }
   }
 }

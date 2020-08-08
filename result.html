@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/542041fd6e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
   <title>Document</title>
@@ -12,20 +13,133 @@
 <body>
   <div class="container">
     <header>
-      <nav>
-
-      </nav>
+      <div class="header-wrapper">
+        <div class='title'>
+          <i class="fas fa-map-marker-alt fa-2x"></i>
+          <h1 class="logo">DeTour</h1>
+        </div>
+        <nav>
+          <i class="fas fa-search"></i>
+          <i class="far fa-user"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-bars"></i>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="main-wrapper">
         <div class="filter-wrapper">
-          <div></div>
-          <div></div>
+          <div>
+            <h2>filter by the country's name:</h2>
+            <form>
+              <label>Country Name</label>
+              <select>
+                <option value="Canada">Canada</option>
+                <option value="Germany">Germany</option>
+                <option value="Sweden">Sweden</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="Netherland">Netherland</option>
+                <option value="Newark">Newark</option>
+                <option value="usa">USA</option>
+                <option value="Japan">Japan</option>
+                <option value="Dubai">Dubai</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <h1>Results found</h1>
+        <div class="image-gallery">
+          <a class="image-wrapper p-1">
+            <div class="img imag-1">
+            </div>
+            <p class="p-1">canada</p>
+          </a>
+
+          <a class="image-wrapper p-2">
+            <div class="img imag-2"></div>
+            <p class="p-2">norway</p>
+          </a>
+          <a class="image-wrapper p-3">
+            <div class="img imag-3"></div>
+            <p class="p-3">germany</p>
+          </a>
+          <a class="image-wrapper p-4">
+            <div class="img imag-4"></div>
+            <p class="p-4">london</p>
+          </a>
+          <a class="image-wrapper p-5">
+            <div class="img imag-5"></div>
+            <p class="p-5">Netherland</p>
+          </a>
+          <a class="image-wrapper p-6">
+            <div class="img imag-6"></div>
+            <p class="p-6">newark</p>
+          </a>
+          <a class="image-wrapper p-7">
+            <div class="img imag-7"></div>
+            <p class="p-7">USA</p>
+          </a>
+          <a class="image-wrapper p-8">
+            <div class="img imag-8"></div>
+            <p class="p-8">Japan</p>
+          </a>
+          <a class="image-wrapper p-9">
+            <div class="img imag-9"></div>
+            <p class="p-9">Dubai</p>
+          </a>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-media-icons-wrapper">
+          <ul class="social-media-icons">
+            <li>home</li>
+            <li>search</li>
+            <li>aboutus</li>
+            <li>advertise</li>
+          </ul>
+          <div class="location-icon">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+          </div>
+          <ul class="social-media-icons">
+            <li>facebook</li>
+            <li>twitter</li>
+            <li>blog</li>
+            <li>google</li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <div class="subscribe">
+            <h1>SUBSCRIBE</h1>
+            <form>
+              <input class="input-field" type="text" id="" name="" value="">
+              <span class="submit" type="submit" value="SEARCH">submit</span>
+            </form>
+          </div>
+          <div class="contact">
+            <h1>CONTACT</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+          </div>
+          <div class="about">
+            <h1>ABOUT</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur </p>
+          </div>
+        </div>
+        <div class="footer-last">
+          <ul>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter-square"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-dropbox"></i></li>
+            <li><i class="fab fa-snapchat-square"></i></li>
+          </ul>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur</div>
+        </div>
+      </div>
+    </footer>
   </div>
-
 </body>
 
 </html>

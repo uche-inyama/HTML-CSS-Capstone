@@ -203,11 +203,105 @@ header .header-wrapper nav {
   place-items: center center;
 }
 
+/* result section */
+.main-wrapper .image-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-template-rows: repeat(6, 300px);
+}
+
+.main-wrapper .image-gallery .image-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr 1fr;
+}
+
+.main-wrapper .image-gallery .image-wrapper .p-7,
+.main-wrapper .image-gallery .image-wrapper .p-8,
+.main-wrapper .image-gallery .image-wrapper .p-9,
+.main-wrapper .image-gallery .image-wrapper .p-10 {
+  display: none;
+}
+
+.main-wrapper .image-gallery .imag-1 {
+  background: url("../asset/image/canada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.main-wrapper .image-gallery .imag-2 {
+  background: url("../asset/image/denmark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.main-wrapper .image-gallery .imag-3 {
+  background: url("../asset/image/germany.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.main-wrapper .image-gallery .imag-4 {
+  background: url("../asset/image/london.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.main-wrapper .image-gallery .imag-5 {
+  background: url("../asset/image/netherland.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.main-wrapper .image-gallery .imag-6 {
+  background: url("../asset/image/newark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.main-wrapper .image-gallery .imag-7 {
+  background: url("../asset/image/dubai.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: none;
+}
+
+.main-wrapper .image-gallery .imag-8 {
+  background: url("../asset/image/usa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: none;
+}
+
+.main-wrapper .image-gallery .imag-9 {
+  background: url("../asset/image/japan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: none;
+}
+
+.main-wrapper .image-gallery .imag-10 {
+  background: url("../asset/image/china.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: none;
+}
+
 @media (min-width: 768px) {
   .main-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 500px 490px 690px;
   }
   .main-wrapper .hero form {
     justify-self: center;
@@ -280,6 +374,15 @@ header .header-wrapper nav {
   }
   .main-wrapper .how-to-find .third {
     background-color: #87abfd;
+  }
+  .main-wrapper .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 400px);
+  }
+  .main-wrapper .image-gallery .imag-7, .main-wrapper .image-gallery .imag-8, .main-wrapper .image-gallery .imag-9, .main-wrapper .image-gallery .imag-10 {
+    display: block;
   }
   .footer-wrapper {
     display: grid;
