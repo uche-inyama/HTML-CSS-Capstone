@@ -13,7 +13,7 @@ header .header-wrapper {
 
 header .header-wrapper .title {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 header .header-wrapper h1.logo {
@@ -36,23 +36,25 @@ header .header-wrapper nav {
   align-items: center;
 }
 
-main {
-  height: 82vh;
+.main-wrapper {
+  font-family: "Thasadith", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+.main-wrapper .hero {
   background: url("../asset/image/erik-odiin-jbQvJx2EWnU-unsplash.jpg");
   background-size: cover;
   background-position: 20% 50%;
   background-repeat: no-repeat;
-  font-family: "Thasadith", sans-serif;
-}
-
-main .main-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 280px 130px;
-  height: 100%;
+  grid-template-rows: 260px 120px;
+  padding-bottom: 10px;
 }
 
-main .main-wrapper h2 {
+.main-wrapper .hero h2 {
   align-self: right;
   color: #fff;
   padding-top: 20px;
@@ -61,41 +63,295 @@ main .main-wrapper h2 {
   justify-self: center;
 }
 
-main .main-wrapper form {
+.main-wrapper .hero form {
   background-color: whitesmoke;
+  border-radius: 5px;
   display: grid;
   grid-gap: 5px;
   align-items: center;
   justify-items: center;
   text-align: left;
-  margin: 0 10px;
+  margin: 0 30px;
+  max-width: 450px;
 }
 
-main .main-wrapper form label, main .main-wrapper form input {
+.main-wrapper .hero form label, .main-wrapper .hero form input {
   padding: 5px 0;
-  width: 90%;
+  width: 100%;
   align-self: center;
 }
 
-main .main-wrapper form .submit {
+.main-wrapper .hero form .submit {
   background-color: #eb765d;
   cursor: pointer;
   font-size: 1.2em;
   font-weight: 700;
-  margin-bottom: 20px;
   padding: 10px;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 
-main .main-wrapper .how-it-works {
+.main-wrapper .hero form .input-submit {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-wrapper .hero .how-it-works {
   margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-main .main-wrapper .how-it-works p {
-  font-weight: 600;
-  margin-left: 10px;
+.main-wrapper .hero .how-it-works p {
+  justify-self: start;
   background-color: whitesmoke;
+  font-weight: 600;
+  margin-left: 30px;
   padding: 5px;
-  width: 30%;
+  text-align: center;
+  max-width: 100px;
+}
+
+.main-wrapper .describe-how-it-works {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+.main-wrapper .describe-how-it-works h1 {
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.main-wrapper .describe-how-it-works .steps p.icon, .main-wrapper .describe-how-it-works .steps h2 {
+  text-align: center;
+}
+
+.main-wrapper .how-to-find {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 100px);
+}
+
+.main-wrapper .how-to-find .image-wrapper {
+  display: none;
+  height: 10px;
+}
+
+.main-wrapper .how-to-find .info {
+  padding: 20px 0 0 10px;
+  height: 100px;
+}
+
+.main-wrapper .how-to-find .first {
+  background-color: #eb765d;
+}
+
+.main-wrapper .how-to-find .second {
+  background-color: #a6adad;
+}
+
+.main-wrapper .how-to-find .third {
+  background-color: #87abfd;
+}
+
+.footer-wrapper .footer-media-icons-wrapper,
+.footer-wrapper .footer-last div {
+  display: none;
+}
+
+.footer-wrapper .footer-contact {
+  background-color: #000;
+  color: #fff;
+  font-family: "Thasadith", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  display: grid;
+  font-family: "Thasadith", sans-serif;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 60px);
+  padding: 20px 0;
+  place-items: center center;
+}
+
+.footer-wrapper .footer-contact h1 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.footer-wrapper .footer-contact .subscribe, .footer-wrapper .footer-contact .contact, .footer-wrapper .footer-contact .about {
+  text-align: center;
+}
+
+.footer-wrapper .footer-contact .subscribe .submit {
+  background-color: darkgrey;
+  padding: 0 10px;
+}
+
+.footer-wrapper .footer-last ul {
+  background-color: #272626;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  grid-template-rows: 40px;
+  place-items: center center;
+}
+
+@media (min-width: 768px) {
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 490px 690px;
+  }
+  .main-wrapper .hero form {
+    justify-self: center;
+    width: 500px;
+  }
+  .main-wrapper .hero form label {
+    padding-left: 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .main-wrapper .hero form input {
+    height: 100%;
+  }
+  .main-wrapper .hero form .input-submit {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .main-wrapper .hero .how-it-works p {
+    height: 30%;
+  }
+  .main-wrapper .how-it-works {
+    justify-self: center;
+  }
+  .main-wrapper .describe-how-it-works {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px repeat(4, 100px);
+    align-items: center;
+  }
+  .main-wrapper .describe-how-it-works h1 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .main-wrapper .describe-how-it-works .steps {
+    padding-left: 20px;
+  }
+  .main-wrapper .describe-how-it-works .lorem-text {
+    line-height: 1.4;
+  }
+  .main-wrapper .describe-how-it-works .icon, .main-wrapper .describe-how-it-works .todo {
+    text-align: center;
+    padding: 5px 0;
+  }
+  .main-wrapper .describe-how-it-works .todo {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .main-wrapper .how-to-find {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 230px);
+    margin-top: 20px;
+  }
+  .main-wrapper .how-to-find .first, .main-wrapper .how-to-find .second, .main-wrapper .how-to-find .third {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    color: #fff;
+  }
+  .main-wrapper .how-to-find .info {
+    padding: 60px 30px;
+  }
+  .main-wrapper .how-to-find .first {
+    background-color: #eb765d;
+  }
+  .main-wrapper .how-to-find .second {
+    background-color: #a6adad;
+  }
+  .main-wrapper .how-to-find .third {
+    background-color: #87abfd;
+  }
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    font-family: "Thasadith", sans-serif;
+    font-size: 1em;
+  }
+  .footer-wrapper .footer-media-icons-wrapper {
+    background-color: black;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: 50px;
+  }
+  .footer-wrapper .footer-media-icons-wrapper .social-media-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    place-items: center center;
+  }
+  .footer-wrapper .footer-media-icons-wrapper .location-icon {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center center;
+  }
+  .footer-wrapper .footer-contact {
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 4fr 3fr 5fr;
+    grid-template-rows: 150px;
+    place-items: center center;
+    padding-left: 20px;
+    text-align: center;
+  }
+  .footer-wrapper .footer-contact .submit {
+    background-color: darkgrey;
+    width: 70px;
+    padding: 0 5px;
+  }
+  .footer-wrapper .footer-last {
+    background-color: #272626;
+    color: #fff;
+    display: grid;
+    padding-bottom: 10px;
+    grid-template-columns: 3fr 7fr;
+  }
+  .footer-wrapper .footer-last ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-rows: 50px;
+    place-items: center center;
+    padding-right: 10px;
+  }
+  .footer-wrapper .info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-wrapper .describe-how-it-works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 150px);
+  }
+  .main-wrapper h1 {
+    grid-column: 1/-1;
+  }
 }
