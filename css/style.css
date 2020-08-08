@@ -243,7 +243,18 @@
 .main-wrapper .image-gallery .image-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5fr 1fr;
+  grid-template-rows: 5fr;
+  position: relative;
+}
+
+.main-wrapper .image-gallery .image-wrapper p {
+  position: absolute;
+  top: 270px;
+  left: 2px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-weight: 600;
 }
 
 .main-wrapper .image-gallery .image-wrapper .p-7,
@@ -380,7 +391,7 @@
     grid-template-columns: 3fr 1fr;
   }
   .main-wrapper .hero .how-it-works p {
-    height: 30%;
+    height: 100%;
   }
   .main-wrapper .how-it-works {
     justify-self: center;
@@ -443,6 +454,18 @@
   }
   .main-wrapper .image-gallery .imag-7, .main-wrapper .image-gallery .imag-8, .main-wrapper .image-gallery .imag-9, .main-wrapper .image-gallery .imag-10 {
     display: block;
+  }
+  .main-wrapper .image-gallery .image-wrapper {
+    position: relative;
+  }
+  .main-wrapper .image-gallery .image-wrapper p {
+    position: absolute;
+    top: 370px;
+    left: 2px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-weight: 600;
   }
   .footer-wrapper {
     display: grid;

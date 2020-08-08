@@ -53,7 +53,7 @@
       }
       .how-it-works{
         p{
-          height: 30%;
+          height: 100%;
         }
       }
     }
@@ -118,10 +118,18 @@
       .imag-7, .imag-8, .imag-9, .imag-10 {
         display: block;
       }
-      // .p-7, .p-8, 
-      // .p-9, .p-10{
-      //   display: none;
-      // }
+      .image-wrapper{
+        position:relative;
+        p{
+          position: absolute;
+          top: 370px;
+          left: 2px;
+          background-color: red;
+          color: white;
+          padding: 5px;
+          font-weight: 600;
+        }
+      }
     }
   }
   .footer-wrapper{
