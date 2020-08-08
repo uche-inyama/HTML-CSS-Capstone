@@ -1,35 +1,32 @@
 @import 'config';
 @import url('https://fonts.googleapis.com/css2?family=Thasadith:ital@0;1&display=swap');
 
-header{
+.header-wrapper {
   color: white;
   height: 100px;
-  .header-wrapper {
-    background-color: $primaryColor;
+  background-color: $primaryColor;
+  display: grid;
+  padding: 10px;
+  .title{
     display: grid;
-    height: 100%;
-    padding: 10px;
-    .title{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    h1.logo{
-      padding-top: 7px;
-      font-weight: 600;
-      font-size: 1.2em;
-      padding-left: 10px;
-    }
-    .fa-map-marker-alt{
-      justify-self: right;
-    }
-    nav{
-      width: 80%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-      justify-items: center;
-      align-items: center;
-    }
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  h1.logo{
+    padding-top: 7px;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+  .fa-map-marker-alt{
+    justify-self: right;
+  }
+  nav{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    justify-items: center;
+    align-items: center;
   }
 }
 
@@ -38,6 +35,34 @@ header{
   display: grid;
   grid-template-columns: 1fr;
   height: 100%;
+  .wrapper{
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px;
+    align-items: center;
+    .filter-wrapper{
+      background-color: $search;
+      height: 70%;
+    }
+  }
+  .results {
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  .select-options{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 40px);
+    place-items: center center ;      
+    height: 100%;
+    form{
+      align-self: start;
+    }
+  }
   .hero{
     background: url('../asset/image/erik-odiin-jbQvJx2EWnU-unsplash.jpg');
     background-size: cover;
@@ -194,6 +219,7 @@ header{
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 5fr 1fr;
+      // border: solid 1px gray;
       .p-7, 
       .p-8, 
       .p-9, 

@@ -1,33 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Thasadith:ital@0;1&display=swap");
-header {
+.header-wrapper {
   color: white;
   height: 100px;
-}
-
-header .header-wrapper {
   background-color: #eb765d;
   display: grid;
-  height: 100%;
   padding: 10px;
 }
 
-header .header-wrapper .title {
+.header-wrapper .title {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-header .header-wrapper h1.logo {
+.header-wrapper h1.logo {
   padding-top: 7px;
   font-weight: 600;
   font-size: 1.2em;
   padding-left: 10px;
 }
 
-header .header-wrapper .fa-map-marker-alt {
+.header-wrapper .fa-map-marker-alt {
   justify-self: right;
 }
 
-header .header-wrapper nav {
+.header-wrapper nav {
   width: 80%;
   margin: 0 auto;
   display: grid;
@@ -41,6 +37,39 @@ header .header-wrapper nav {
   display: grid;
   grid-template-columns: 1fr;
   height: 100%;
+}
+
+.main-wrapper .wrapper {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px;
+  align-items: center;
+}
+
+.main-wrapper .wrapper .filter-wrapper {
+  background-color: #a6adad;
+  height: 70%;
+}
+
+.main-wrapper .results {
+  height: 30px;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.main-wrapper .select-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 40px);
+  place-items: center center;
+  height: 100%;
+}
+
+.main-wrapper .select-options form {
+  align-self: start;
 }
 
 .main-wrapper .hero {
@@ -299,9 +328,40 @@ header .header-wrapper nav {
 }
 
 @media (min-width: 768px) {
+  .header-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+  }
+  .header-wrapper .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 60px;
+  }
   .main-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .main-wrapper .wrapper {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    align-items: center;
+  }
+  .main-wrapper .wrapper .filter-wrapper {
+    background-color: #a6adad;
+    height: 70%;
+  }
+  .main-wrapper .select-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 80px);
+    place-items: center center;
+    height: 100%;
+  }
+  .main-wrapper .select-options form {
+    align-self: start;
   }
   .main-wrapper .hero form {
     justify-self: center;

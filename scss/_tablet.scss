@@ -1,8 +1,39 @@
 @media(min-width: 768px) {
+  .header-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    .title{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 60px;
+    }
+  }
   .main-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     // grid-template-rows: 500px 490px 690px;
+    .wrapper{
+      align-content: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 200px;
+      align-items: center;
+      .filter-wrapper{
+        background-color: $search;
+        height: 70%;
+      }
+    }
+    .select-options{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 80px);
+      place-items: center center ;      
+      height: 100%;
+      form{
+        align-self: start;
+      }
+    }
     .hero{
       form{
         label{
