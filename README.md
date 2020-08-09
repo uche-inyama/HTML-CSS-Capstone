@@ -30,7 +30,7 @@ On your terminal:
 
 ## Live Demo
 
-[Live Link](https://uche-inyama.github.io/NewsWeek/)
+[Live Link](https://uche-inyama.github.io/HTML-CSS-Capstone/index.html)
 
 ## Author
 
@@ -50,7 +50,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [newsweek](https://www.newsweek.com/).
+- [behance-PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE).
 
 ## 📝 License
 
