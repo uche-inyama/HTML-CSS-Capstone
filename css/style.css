@@ -7,9 +7,11 @@
   padding: 10px;
 }
 
-.header-wrapper .title {
+.header-wrapper .title a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  text-decoration: none;
+  color: white;
 }
 
 .header-wrapper h1.logo {
@@ -30,6 +32,10 @@
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   justify-items: center;
   align-items: center;
+}
+
+.header-wrapper nav a {
+  color: white;
 }
 
 .main-wrapper {
@@ -126,6 +132,11 @@
   grid-gap: 5px;
   width: 80%;
   margin: 0 auto;
+}
+
+.main-wrapper .hero form .input-submit a {
+  color: white;
+  text-decoration: none;
 }
 
 .main-wrapper .hero .how-it-works {
@@ -412,11 +423,12 @@
     display: grid;
     grid-template-columns: 2fr 6fr;
   }
-  .header-wrapper .title {
+  .header-wrapper .title a {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-left: 60px;
+    height: 100%;
   }
   .main-wrapper {
     display: grid;
