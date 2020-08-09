@@ -1,9 +1,9 @@
 # HTML-CSS-Capstone
 
 
-> This project, a replica of NewsWeek, was built using bootstrap framework, Bootstrap 4.0 version. 
-> The html is structured in this order: containers, rows and columns. With this structure in mind you can think about the code 
->in the right way.
+> The purpose of this project, is to evaluate my understanding of HTML and CSS
+> 
+>
 
 ![capstone](https://user-images.githubusercontent.com/46329537/89739396-3e0a1400-da78-11ea-89bc-583d7389bafc.png)
 
