@@ -132,7 +132,6 @@
   }
   .describe-how-it-works{
     display: none;
-    // display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     padding: 0 5px;
@@ -148,7 +147,6 @@
 
   .how-to-find{
     display: none;
-    // display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 100px);
     .image-wrapper {
@@ -216,7 +214,6 @@
 /* result section */
 
 .main-wrapper{
-  // margin: 0 10px;
   .image-gallery{
     display: grid;
     grid-template-columns: 1fr;
