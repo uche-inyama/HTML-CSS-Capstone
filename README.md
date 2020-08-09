@@ -5,14 +5,13 @@
 > The html is structured in this order: containers, rows and columns. With this structure in mind you can think about the code 
 >in the right way.
 
-![Screenshot from 2020-06-21 19-04-40](https://user-images.githubusercontent.com/46329537/85231813-37eda480-b3f2-11ea-9c73-d7d4c2dfe624.png)
+![capstone](https://user-images.githubusercontent.com/46329537/89739396-3e0a1400-da78-11ea-89bc-583d7389bafc.png)
 
 
 
 ## Built With
 
 - HTML,
-- Bootstrap,
 - CSS
 
 ## Getting Started
@@ -21,7 +20,7 @@ To get the local copy up and running follow these simple example steps.
 
 On your terminal: 
 
-- Clone the repository with `git@github.com:uche-inyama/NewsWeek.git` to get a local copy.
+- Clone the repository with `git@github.com:uche-inyama/HTML-CSS-Capstone.git` to get a local copy.
 - cd into the folder where the project is stored in your machine.
 - To look at the code on the editor, for vscode type: *`code . `*
 - To view the project on your browser, if you are working with vscode, on the status bar, click on `Go Live`,
