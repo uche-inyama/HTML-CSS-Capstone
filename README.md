@@ -1,8 +1,8 @@
 # HTML-CSS-Capstone
 
 
-> The purpose of this project, is to evaluate my understanding of HTML and CSS
-> 
+> The purpose of this project, is to consolidate and evalute my understanding of the concepts 
+> I had learned working HTML and CSS
 >
 
 ![capstone](https://user-images.githubusercontent.com/46329537/89739396-3e0a1400-da78-11ea-89bc-583d7389bafc.png)
