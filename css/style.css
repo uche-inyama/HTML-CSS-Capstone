@@ -79,7 +79,7 @@
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 260px 120px;
+  grid-template-rows: 300px 120px;
   padding-bottom: 10px;
 }
 
@@ -192,6 +192,10 @@
   background-color: #87abfd;
 }
 
+.footer-wrapper {
+  display: none;
+}
+
 .footer-wrapper .footer-media-icons-wrapper,
 .footer-wrapper .footer-last div {
   display: none;
@@ -241,6 +245,7 @@
   grid-template-columns: 1fr;
   grid-gap: 10px;
   grid-template-rows: repeat(6, 300px);
+  margin-bottom: 10px;
 }
 
 .main-wrapper .image-gallery .image-wrapper {
@@ -403,10 +408,6 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
   .header-wrapper {
     display: grid;
     grid-template-columns: 2fr 6fr;
@@ -420,6 +421,7 @@
   .main-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    margin-bottom: 10px;
   }
   .main-wrapper .wrapper {
     align-content: center;
@@ -495,7 +497,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 230px);
-    margin-top: 20px;
+    margin: 20px 10px 0 10px;
   }
   .main-wrapper .how-to-find .first, .main-wrapper .how-to-find .second, .main-wrapper .how-to-find .third {
     display: grid;
@@ -521,7 +523,7 @@
     grid-template-rows: repeat(3, 400px);
   }
   .main-wrapper .image-gallery .imag-7, .main-wrapper .image-gallery .imag-8, .main-wrapper .image-gallery .imag-9, .main-wrapper .image-gallery .imag-10 {
-    display: block;
+    display: none;
   }
   .main-wrapper .image-gallery .image-wrapper {
     position: relative;
@@ -538,7 +540,7 @@
   .detail-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 100px 300px;
+    grid-template-rows: 700px 100px;
     justify-items: center;
     margin-top: 100px;
   }
@@ -546,7 +548,7 @@
     border: solid gray 1px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 290px;
+    grid-template-rows: 50px 500px 70px;
     justify-items: center;
     width: 90%;
   }
@@ -579,13 +581,6 @@
   }
   .detail-wrapper .detail-info {
     padding-top: 20px;
-    width: 90%;
-  }
-  .detail-wrapper .map-direction {
-    background: url("../asset/image/burjmap.png");
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
     width: 90%;
   }
   .footer-wrapper {
@@ -659,5 +654,8 @@
   }
   .main-wrapper h1 {
     grid-column: 1/-1;
+  }
+  .main-wrapper .image-gallery .imag-7, .main-wrapper .image-gallery .imag-8, .main-wrapper .image-gallery .imag-9, .main-wrapper .image-gallery .imag-10 {
+    display: block;
   }
 }

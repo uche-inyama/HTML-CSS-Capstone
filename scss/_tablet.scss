@@ -1,8 +1,4 @@
 @media(min-width: 768px) {
-  .container{
-    width: 90%;
-    margin: 0 auto;
-  }
   .header-wrapper{
     display: grid;
     grid-template-columns: 2fr 6fr;
@@ -14,8 +10,10 @@
     }
   }
   .main-wrapper {
+    // margin: 0 10px;
     display: grid;
     grid-template-columns: 1fr;
+    margin-bottom: 10px;
     // grid-template-rows: 500px 490px 690px;
     .wrapper{
       align-content: center;
@@ -93,7 +91,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 230px);
-      margin-top: 20px;
+      margin: 20px 10px 0 10px;
       .first, .second,.third{
         display: grid;
         grid-template-columns: 2fr 4fr;
@@ -118,7 +116,7 @@
       grid-gap: 10px;
       grid-template-rows: repeat(3, 400px);
       .imag-7, .imag-8, .imag-9, .imag-10 {
-        display: block;
+        display: none;
       }
       .image-wrapper{
         position:relative;
@@ -135,18 +133,17 @@
     }
   }
 
- 
   .detail-wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 100px 300px;
+    grid-template-rows: 700px 100px;
     justify-items: center;
     margin-top: 100px;
     .details{
       border: solid gray 1px;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 50px 290px;
+      grid-template-rows: 50px 500px 70px;
       justify-items: center;
       width: 90%;
       h1{
@@ -179,14 +176,6 @@
     }
     .detail-info{
       padding-top: 20px;
-      width: 90%;
-    }
-
-    .map-direction{
-      background: url("../asset/image/burjmap.png");
-      background-size: cover;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
       width: 90%;
     }
   }

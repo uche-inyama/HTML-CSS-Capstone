@@ -70,7 +70,7 @@
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 260px 120px;
+    grid-template-rows: 300px 120px;
     padding-bottom: 10px;
     h2{
       align-self: right;
@@ -170,7 +170,10 @@
     }
   }
 }
+
+
 .footer-wrapper{
+  display: none;
   .footer-media-icons-wrapper,
   .footer-last div {
     display: none;
@@ -213,11 +216,13 @@
 /* result section */
 
 .main-wrapper{
+  // margin: 0 10px;
   .image-gallery{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     grid-template-rows: repeat(6, 300px);
+    margin-bottom: 10px;
     .image-wrapper{
       display: grid;
       grid-template-columns: 1fr;

@@ -11,5 +11,26 @@
     h1{
       grid-column: 1/-1;
     }
+    .image-gallery{
+      // display: grid;
+      // grid-template-columns: repeat(auto-fit, minmax(300px,1fr));;
+      // grid-gap: 10px;
+      // grid-template-rows: repeat(3, 400px);
+      .imag-7, .imag-8, .imag-9, .imag-10 {
+        display: block;
+      }
+      // .image-wrapper{
+      //   position:relative;
+      //   p{
+      //     position: absolute;
+      //     top: 370px;
+      //     left: 2px;
+      //     background-color: red;
+      //     color: white;
+      //     padding: 5px;
+      //     font-weight: 600;
+      //   }
+      // }
+    }
   }
 }
