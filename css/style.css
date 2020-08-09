@@ -132,20 +132,23 @@
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 70px;
 }
 
 .main-wrapper .hero .how-it-works p {
   justify-self: start;
   background-color: whitesmoke;
   font-weight: 600;
-  margin-left: 30px;
-  padding: 5px;
+  font-size: 1em;
+  height: 40%;
+  margin: 0 auto;
+  padding: 5px 5px;
   text-align: center;
   max-width: 100px;
 }
 
 .main-wrapper .describe-how-it-works {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   grid-gap: 10px;
   padding: 0 5px;
@@ -162,7 +165,7 @@
 }
 
 .main-wrapper .how-to-find {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 100px);
 }
@@ -265,14 +268,14 @@
 }
 
 .main-wrapper .image-gallery .imag-1 {
-  background: url("../asset/image/canada.jpg");
+  background: url("../asset/image/dubai.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .main-wrapper .image-gallery .imag-2 {
-  background: url("../asset/image/denmark.jpg");
+  background: url("../asset/image/canada.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -307,7 +310,7 @@
 }
 
 .main-wrapper .image-gallery .imag-7 {
-  background: url("../asset/image/dubai.jpg");
+  background: url("../asset/image/denmark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -338,7 +341,72 @@
   display: none;
 }
 
+.detail-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 150px 300px;
+  justify-items: center;
+  margin-top: 100px;
+}
+
+.detail-wrapper .details {
+  border: solid gray 1px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 290px;
+  justify-items: center;
+  width: 90%;
+}
+
+.detail-wrapper .details h1 {
+  align-self: end;
+  width: 90%;
+  text-align: left;
+  padding: 10px 0px 10px 0px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.detail-wrapper .details .detail-image-wrapper {
+  background: url("../asset/image/burj-khalifa.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 90%;
+}
+
+.detail-wrapper .details .detail-image-wrapper2 {
+  background: url("../asset/image/Etihad-Museum.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 90%;
+}
+
+.detail-wrapper .details .apply {
+  align-self: center;
+  width: 80%;
+  text-align: right;
+}
+
+.detail-wrapper .detail-info {
+  padding-top: 20px;
+  width: 90%;
+}
+
+.detail-wrapper .map-direction {
+  background: url("../asset/image/burjmap.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 90%;
+}
+
 @media (min-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
   .header-wrapper {
     display: grid;
     grid-template-columns: 2fr 6fr;
@@ -390,11 +458,11 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
   }
-  .main-wrapper .hero .how-it-works p {
-    height: 100%;
-  }
-  .main-wrapper .how-it-works {
+  .main-wrapper .hero .how-it-works {
     justify-self: center;
+  }
+  .main-wrapper .hero .how-it-works p {
+    height: 40%;
   }
   .main-wrapper .describe-how-it-works {
     margin: 0 auto;
@@ -435,7 +503,7 @@
     color: #fff;
   }
   .main-wrapper .how-to-find .info {
-    padding: 60px 30px;
+    padding: 20px 0 0 30px;
   }
   .main-wrapper .how-to-find .first {
     background-color: #eb765d;
@@ -467,6 +535,59 @@
     padding: 5px;
     font-weight: 600;
   }
+  .detail-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 100px 300px;
+    justify-items: center;
+    margin-top: 100px;
+  }
+  .detail-wrapper .details {
+    border: solid gray 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 290px;
+    justify-items: center;
+    width: 90%;
+  }
+  .detail-wrapper .details h1 {
+    align-self: end;
+    width: 90%;
+    text-align: left;
+    padding: 10px 0px 10px 0px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+  .detail-wrapper .details .detail-image-wrapper {
+    background: url("../asset/image/burj-khalifa.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 90%;
+  }
+  .detail-wrapper .details .detail-image-wrapper2 {
+    background: url("../asset/image/Etihad-Museum.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 90%;
+  }
+  .detail-wrapper .details .apply {
+    align-self: center;
+    width: 80%;
+    text-align: right;
+  }
+  .detail-wrapper .detail-info {
+    padding-top: 20px;
+    width: 90%;
+  }
+  .detail-wrapper .map-direction {
+    background: url("../asset/image/burjmap.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 90%;
+  }
   .footer-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -495,7 +616,7 @@
     background-color: #000;
     color: #fff;
     display: grid;
-    grid-template-columns: 4fr 3fr 5fr;
+    grid-template-columns: 6fr 3fr 3fr;
     grid-template-rows: 150px;
     place-items: center center;
     padding-left: 20px;
@@ -528,9 +649,8 @@
 }
 
 @media (min-width: 1024px) {
-  .container {
-    width: 90%;
-    margin: 0 auto;
+  .detail-wrapper {
+    margin-top: 100px;
   }
   .main-wrapper .describe-how-it-works {
     display: grid;
