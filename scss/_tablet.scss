@@ -1,8 +1,9 @@
-@media(min-width: 768px) {
-  .header-wrapper{
+@media (min-width: 768px) {
+  .header-wrapper {
     display: grid;
     grid-template-columns: 2fr 6fr;
-    .title a{
+
+    .title a {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -14,51 +15,63 @@
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 10px;
-    .wrapper{
+
+    .wrapper {
       align-content: center;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 200px;
       align-items: center;
-      .filter-wrapper{
+      
+      .filter-wrapper {
         background-color: $search;
         height: 70%;
       }
     }
-    .select-options{
+    .select-options {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 80px);
       place-items: center center ;      
       height: 100%;
-      form{
+
+      form {
         align-self: start;
       }
     }
-    .hero{
-      form{
-        label{
+
+    .hero {
+
+      form {
+
+        label {
           padding-left: 40px;
           font-size: 1.2em;
           font-weight: 600;
         }
-        input{
+
+        input {
           height: 100%;
         }
+
         justify-self: center;
         width: 500px;
-        .input-submit{
+
+        .input-submit {
           display: grid;
           grid-template-columns: 3fr 1fr;
         }
       }
-      .how-it-works{
+
+      .how-it-works {
         justify-self: center;
-        p{
+
+        p {
           height: 40%;
         }
       }
     }
+
     .describe-how-it-works {
       margin: 0 auto;
       display: grid;
@@ -66,57 +79,71 @@
       grid-template-columns: 1fr;
       grid-template-rows: 70px repeat(4, 100px);
       align-items: center;
-      h1{
+
+      h1 {
         text-align: center;
         font-size: 1.2em;
         font-weight: 600;
       }
-      .steps{
+
+      .steps {
         padding-left: 20px;
       }
-      .lorem-text{
+
+      .lorem-text {
         line-height: 1.4;
       }
-      .icon, .todo{
+
+      .icon, .todo {
         text-align: center;
         padding: 5px 0
       }
-      .todo{
+
+      .todo {
         font-weight: 600;
         font-size: 1.2em;
       }
     }
-    .how-to-find{
+
+    .how-to-find {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 230px);
       margin: 20px 10px 0 10px;
-      .first, .second,.third{
+
+      .first, .second,.third {
         display: grid;
         grid-template-columns: 2fr 4fr;
         color: #fff;
       }
-      .info{
+
+      .info {
         padding: 20px 0 0 30px;
       }
-      .first{
+
+      .first {
         background-color: $primaryColor;
       }
-      .second{
+
+      .second {
         background-color: $search;
       }
-      .third{
+
+      .third {
         background-color: $secondary;
       }
     }
-    .image-gallery{
+
+    .image-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px,1fr));;
       grid-gap: 10px;
       grid-template-rows: repeat(3, 400px);
+
       .imag-7, .imag-8, .imag-9, .imag-10 {
         display: none;
       }
+
       .image-wrapper{
         position:relative;
         p{

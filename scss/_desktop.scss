@@ -4,6 +4,7 @@
   }
 
   .main-wrapper {
+
     .describe-how-it-works {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -13,8 +14,9 @@
     h1{
       grid-column: 1/-1;
     }
-    
+
     .image-gallery {
+      
       .imag-7, .imag-8, .imag-9, .imag-10 {
         display: block;
       }
