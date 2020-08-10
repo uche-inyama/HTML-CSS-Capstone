@@ -22,7 +22,7 @@
       grid-template-columns: 1fr;
       grid-template-rows: 200px;
       align-items: center;
-      
+
       .filter-wrapper {
         background-color: $search;
         height: 70%;
@@ -144,9 +144,10 @@
         display: none;
       }
 
-      .image-wrapper{
+      .image-wrapper {
         position:relative;
-        p{
+
+        p {
           position: absolute;
           top: 370px;
           left: 2px;
@@ -159,20 +160,22 @@
     }
   }
 
-  .detail-wrapper{
+  .detail-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 700px 100px;
     justify-items: center;
     margin-top: 100px;
-    .details{
+
+    .details {
       border: solid gray 1px;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 50px 500px 70px;
       justify-items: center;
       width: 90%;
-      h1{
+
+      h1 {
         align-self: end;
         width: 90%;
         text-align: left;
@@ -180,56 +183,63 @@
         font-size: 1.2rem;
         text-transform: capitalize;
       }
-      .detail-image-wrapper{
+      .detail-image-wrapper {
         background: url("../asset/image/burj-khalifa.jpg");
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         width: 90%;
       }
-      .detail-image-wrapper2{
+
+      .detail-image-wrapper2 {
         background: url("../asset/image/Etihad-Museum.jpg");
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         width: 90%;
       }
-      .apply{
+
+      .apply {
         align-self: center;
         width:80%;
        text-align: right;
       }
     }
-    .detail-info{
+
+    .detail-info {
       padding-top: 20px;
       width: 90%;
     }
   }
 
-  .footer-wrapper{
+  .footer-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     font-family: $font-stack;
     font-size: 1em;
-    .footer-media-icons-wrapper{
+
+    .footer-media-icons-wrapper {
       background-color: black;
       color: #fff;
       display: grid;
       grid-template-columns: 4fr 1fr 4fr;
       grid-template-rows: 50px;
-      .social-media-icons{
+
+      .social-media-icons {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
         place-items: center center;
       }
-      .location-icon{
+
+      .location-icon {
         display: grid;
         grid-template-columns: 1fr;
         place-items: center center;
       }
     }
-    .footer-contact{
+
+    .footer-contact {
       background-color: #000;
       color: #fff;
       display: grid;
@@ -238,19 +248,22 @@
       place-items: center center;
       padding-left: 20px;
       text-align: center;
-      .submit{
+
+      .submit {
         background-color: darkgrey;
         width: 70px;
         padding: 0 5px;
       }
     }
-    .footer-last{
+
+    .footer-last {
       background-color: rgb(39, 38, 38);
       color: #fff;
       display: grid;
       padding-bottom: 10px;
       grid-template-columns: 3fr 7fr;
-      ul{
+
+      ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
         grid-template-rows: 50px;
@@ -258,7 +271,8 @@
         padding-right: 10px;
       }
     }
-    .info{
+
+    .info {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
