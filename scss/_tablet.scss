@@ -120,6 +120,7 @@
 
       .detail-info {
         padding: 20px 0 0 30px;
+        height: 100%;
       }
 
       .first {
@@ -180,33 +181,6 @@
         font-size: 1.2rem;
         text-transform: capitalize;
       }
-
-      .detail-image-wrapper {
-        background: url("../asset/image/burj-khalifa.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        width: 90%;
-      }
-
-      .detail-image-wrapper2 {
-        background: url("../asset/image/Etihad-Museum.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        width: 90%;
-      }
-
-      .apply {
-        align-self: center;
-        width: 80%;
-        text-align: right;
-      }
-    }
-
-    .item-detail-info {
-      padding-top: 20px;
-      width: 90%;
     }
   }
 
