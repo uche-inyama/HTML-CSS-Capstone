@@ -4,14 +4,13 @@
   }
 
   .main-wrapper {
-
     .describe-how-it-works {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 150px);
     }
 
-    h1{
+    h1 {
       grid-column: 1/-1;
     }
   }
