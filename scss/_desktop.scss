@@ -1,17 +1,20 @@
-@media(min-width: 1024px){  
-  .detail-wrapper{
+@media(min-width: 1024px) {  
+  .detail-wrapper {
     margin-top: 100px;
   }
-  .main-wrapper{
+
+  .main-wrapper {
     .describe-how-it-works {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 150px);
     }
+
     h1{
       grid-column: 1/-1;
     }
-    .image-gallery{
+    
+    .image-gallery {
       .imag-7, .imag-8, .imag-9, .imag-10 {
         display: block;
       }
