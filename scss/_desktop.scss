@@ -1,4 +1,4 @@
-@media(min-width: 1024px) {  
+@media (min-width: 1024px) {  
   .detail-wrapper {
     margin-top: 100px;
   }
@@ -13,7 +13,7 @@
     h1{
       grid-column: 1/-1;
     }
-    
+
     .image-gallery {
       .imag-7, .imag-8, .imag-9, .imag-10 {
         display: block;
