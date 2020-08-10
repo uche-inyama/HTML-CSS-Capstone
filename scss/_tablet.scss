@@ -34,7 +34,8 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 80px);
-      place-items: center center;      
+      justify-items: center;
+      align-items: center;
       height: 100%;
 
       form {
@@ -285,4 +286,14 @@
       align-items: center;
     }
   }
+}
+
+
+a {
+  color: pink;
+  top: 0;
+}
+
+a {
+  color: pink; top: 0;
 }
