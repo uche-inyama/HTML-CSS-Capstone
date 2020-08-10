@@ -10,6 +10,14 @@
       grid-template-rows: repeat(3, 150px);
     }
 
+    .image-gallery {
+      .imag-7,
+      .imag-8,
+      .imag-9 {
+        display: block;
+      }
+    }
+
     h1 {
       grid-column: 1/-1;
     }

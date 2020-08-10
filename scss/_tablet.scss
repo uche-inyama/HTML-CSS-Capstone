@@ -141,6 +141,7 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-gap: 10px;
       grid-template-rows: repeat(3, 400px);
+      padding: 0 10px;
 
       .image-wrapper {
         position: relative;

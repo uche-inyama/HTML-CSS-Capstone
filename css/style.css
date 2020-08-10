@@ -200,13 +200,6 @@
   font-weight: 600;
 }
 
-.main-wrapper .image-gallery .image-wrapper .p-7,
-.main-wrapper .image-gallery .image-wrapper .p-8,
-.main-wrapper .image-gallery .image-wrapper .p-9,
-.main-wrapper .image-gallery .image-wrapper .p-10 {
-  display: none;
-}
-
 .main-wrapper .image-gallery .imag-1 {
   background: url("../asset/image/dubai.jpg");
   background-repeat: no-repeat;
@@ -506,6 +499,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     grid-template-rows: repeat(3, 400px);
+    padding: 0 10px;
   }
   .main-wrapper .image-gallery .image-wrapper {
     position: relative;
@@ -610,6 +604,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 150px);
+  }
+  .main-wrapper .image-gallery .imag-7,
+  .main-wrapper .image-gallery .imag-8,
+  .main-wrapper .image-gallery .imag-9 {
+    display: block;
   }
   .main-wrapper h1 {
     grid-column: 1/-1;
