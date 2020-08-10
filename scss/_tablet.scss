@@ -137,12 +137,12 @@
 
     .image-gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px,1fr));;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-gap: 10px;
       grid-template-rows: repeat(3, 400px);
 
       .image-wrapper {
-        position:relative;
+        position: relative;
 
         p {
           position: absolute;
@@ -176,10 +176,11 @@
         align-self: end;
         width: 90%;
         text-align: left;
-        padding:10px 0px 10px 0px;
+        padding: 10px 0;
         font-size: 1.2rem;
         text-transform: capitalize;
       }
+
       .detail-image-wrapper {
         background: url("../asset/image/burj-khalifa.jpg");
         background-size: cover;
@@ -198,8 +199,8 @@
 
       .apply {
         align-self: center;
-        width:80%;
-       text-align: right;
+        width: 80%;
+        text-align: right;
       }
     }
 
