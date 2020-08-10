@@ -29,7 +29,7 @@
         height: 70%;
       }
     }
-    
+
     .select-options {
       display: grid;
       grid-template-columns: 1fr;
@@ -94,9 +94,10 @@
         line-height: 1.4;
       }
 
-      .icon, .todo {
+      .icon, 
+      .todo {
         text-align: center;
-        padding: 5px 0
+        padding: 5px 0;
       }
 
       .todo {
@@ -111,7 +112,9 @@
       grid-template-rows: repeat(3, 230px);
       margin: 20px 10px 0 10px;
 
-      .first, .second,.third {
+      .first, 
+      .second,
+      .third {
         display: grid;
         grid-template-columns: 2fr 4fr;
         color: #fff;
@@ -140,7 +143,10 @@
       grid-gap: 10px;
       grid-template-rows: repeat(3, 400px);
 
-      .imag-7, .imag-8, .imag-9, .imag-10 {
+      .imag-7, 
+      .imag-8, 
+      .imag-9, 
+      .imag-10 {
         display: none;
       }
 
