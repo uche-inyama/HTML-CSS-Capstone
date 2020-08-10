@@ -71,7 +71,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 40px);
-    place-items: center center ;      
+    justify-items: center;
+    align-items: center;
     height: 100%;
 
     form {
@@ -90,7 +91,7 @@
     padding-bottom: 10px;
 
     h2 {
-      align-self: right;
+      text-align: right;
       color: #fff;
       padding-top: 20px;
       font-size: 1.4em;
@@ -108,12 +109,6 @@
       text-align: left;
       margin: 0 30px;
       max-width: 450px;
-
-      label, input{
-        padding: 5px 0;
-        width: 100%;
-        align-self: center;
-      }
 
       .submit {
         background-color: $primaryColor;
