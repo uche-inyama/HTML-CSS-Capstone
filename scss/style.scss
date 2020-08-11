@@ -1,5 +1,7 @@
 @import 'config';
 @import url('https://fonts.googleapis.com/css2?family=Thasadith:ital@0;1&display=swap');
+@import 'mixin';
+@import 'utility';
 
 .header-wrapper {
   color: white;
@@ -9,15 +11,21 @@
   padding: 10px;
 
   nav {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     justify-items: center;
     align-items: center;
 
     a {
       color: white;
+    }
+
+    i span {
+      display: none;
+      text-transform: uppercase;
+      font-family: $font-stack;
+      font-weight: 600;
     }
   }
 
@@ -174,30 +182,6 @@
 
   .how-to-find {
     display: none;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: repeat(3, 100px);
-
-    // .image-wrapper {
-    //   display: none;
-    //   height: 10px;
-    // }
-
-    // .detail-info {
-    //   padding: 20px 0 0 10px;
-    //   height: 100px;
-    // }
-
-    // .first {
-    //   background-color: $primaryColor;
-    // }
-
-    // .second {
-    //   background-color: $search;
-    // }
-
-    // .third {
-    //   background-color: $secondary;
-    // }
   }
 
   .image-gallery {
@@ -224,78 +208,19 @@
       }
     }
 
-    .imag-1 {
-      background: url("../asset/image/dubai.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
-
-    .imag-2 {
-      background: url("../asset/image/canada.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
-
-    .imag-3 {
-      background: url("../asset/image/germany.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
-
-    .imag-4 {
-      background: url("../asset/image/london.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
-
-    .imag-5 {
-      background: url("../asset/image/netherland.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
-
-    .imag-6 {
-      background: url("../asset/image/newark.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
-
-    .imag-7 {
-      background: url("../asset/image/denmark.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-      display: none;
-    }
-
-    .imag-8 {
-      background: url("../asset/image/usa.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-      display: none;
-    }
-
-    .imag-9 {
-      background: url("../asset/image/japan.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-      display: none;
-    }
-
-    .imag-10 {
-      background: url("../asset/image/china.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-      display: none;
+    $count: 1;
+    $urls: $image-url;
+    @each $url in $urls {
+      .imag-#{$count}{
+        @if $count > 6 {
+          @include set-background-image($url);
+          display: none;
+        }
+        @else {
+          @include set-background-image($url)
+        }
+      }
+      $count: $count + 1;
     }
   }
 }
@@ -361,52 +286,169 @@
   }
 }
 
-.footer-wrapper {
-  display: none;
+// .footer-wrapper {
+//   display: block;
 
-  .footer-media-icons-wrapper,
-  .footer-last div {
+//   .footer-media-icons-wrapper,
+//   .footer-last div {
+//     display: none;
+//   }
+
+//   .footer-contact {
+//     background-color: #000;
+//     color: #fff;
+//     font-family: $font-stack;
+//     font-size: 1em;
+//     font-weight: 600;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: repeat(3, 60px);
+//     padding: 20px 0;
+
+//     h1 {
+//       font-size: 1em;
+//       font-weight: 600;
+//       margin-bottom: 5px;
+//     }
+
+//     .subscribe,
+//     .contact,
+//     .about {
+//       text-align: center;
+//     }
+
+//     .subscribe .submit {
+//       background-color: darkgrey;
+//       padding: 0 10px;
+//     }
+//   }
+
+//   .footer-last ul {
+//     background-color: rgb(39, 38, 38);
+//     color: #fff;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+//     grid-template-rows: 40px;.footer-wrapper {
+//   display: block;
+
+//   .footer-media-icons-wrapper,
+//   .footer-last div {
+//     display: none;
+//   }
+
+//   .footer-contact {
+//     background-color: #000;
+//     color: #fff;
+//     font-family: $font-stack;
+//     font-size: 1em;
+//     font-weight: 600;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: repeat(3, 60px);
+//     padding: 20px 0;
+
+//     h1 {
+//       font-size: 1em;
+//       font-weight: 600;
+//       margin-bottom: 5px;
+//     }
+
+//     .subscribe,
+//     .contact,
+//     .about {
+//       text-align: center;
+//     }
+
+//     .subscribe .submit {
+//       background-color: darkgrey;
+//       padding: 0 10px;
+//     }
+//   }
+
+//   .footer-last ul {
+//     background-color: rgb(39, 38, 38);
+//     color: #fff;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+//     grid-template-rows: 40px;
+//     place-items: center center;
+//   }
+  
+// }
+
+//     place-items: center center;
+//   }
+  
+// }
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  font-family: $font-stack;
+  font-size: 1em;
+
+  .footer-media-icons-wrapper {
     display: none;
+    background-color: black;
+    color: #fff;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: 50px;
+
+    .social-media-icons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+      place-items: center center;
+    }
+
+    .location-icon {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center center;
+    }
   }
 
   .footer-contact {
     background-color: #000;
     color: #fff;
-    font-family: $font-stack;
-    font-size: 1em;
-    font-weight: 600;
     display: grid;
+    font-weight: 550;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 60px);
-    padding: 20px 0;
+    grid-template-rows: 50px 100px;
+    place-items: center center;
+    // padding-left: 20px;
+    text-align: center;
 
-    h1 {
-      font-size: 1em;
-      font-weight: 600;
-      margin-bottom: 5px;
-    }
-
-    .subscribe,
-    .contact,
-    .about {
-      text-align: center;
-    }
-
-    .subscribe .submit {
+    .submit {
       background-color: darkgrey;
-      padding: 0 10px;
+      width: 70px;
+      padding: 0 5px;
     }
   }
 
-  .footer-last ul {
+  .footer-last {
     background-color: rgb(39, 38, 38);
     color: #fff;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-    grid-template-rows: 40px;
-    place-items: center center;
+    // padding-bottom: 10px;
+    grid-template-columns: 1fr 1fr;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+      grid-template-rows: 50px;
+      place-items: center center;
+      padding-right: 10px;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 }
+
 
 @import 'tablet';
 @import 'desktop'

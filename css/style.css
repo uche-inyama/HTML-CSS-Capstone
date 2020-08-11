@@ -8,16 +8,22 @@
 }
 
 .header-wrapper nav {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   justify-items: center;
   align-items: center;
 }
 
 .header-wrapper nav a {
   color: white;
+}
+
+.header-wrapper nav i span {
+  display: none;
+  text-transform: uppercase;
+  font-family: "Thasadith", sans-serif;
+  font-weight: 600;
 }
 
 .header-wrapper .title a {
@@ -201,49 +207,49 @@
 }
 
 .main-wrapper .image-gallery .imag-1 {
-  background: url("../asset/image/dubai.jpg");
+  background: url("../asset/image/japan.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .main-wrapper .image-gallery .imag-2 {
-  background: url("../asset/image/canada.jpg");
+  background: url("../asset/image/china.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .main-wrapper .image-gallery .imag-3 {
-  background: url("../asset/image/germany.jpg");
+  background: url("../asset/image/dubai.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .main-wrapper .image-gallery .imag-4 {
-  background: url("../asset/image/london.jpg");
+  background: url("../asset/image/canada.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .main-wrapper .image-gallery .imag-5 {
-  background: url("../asset/image/netherland.jpg");
+  background: url("../asset/image/germany.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .main-wrapper .image-gallery .imag-6 {
-  background: url("../asset/image/newark.jpg");
+  background: url("../asset/image/london.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .main-wrapper .image-gallery .imag-7 {
-  background: url("../asset/image/denmark.jpg");
+  background: url("../asset/image/netherland.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -251,7 +257,7 @@
 }
 
 .main-wrapper .image-gallery .imag-8 {
-  background: url("../asset/image/usa.jpg");
+  background: url("../asset/image/newark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -259,15 +265,7 @@
 }
 
 .main-wrapper .image-gallery .imag-9 {
-  background: url("../asset/image/japan.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  display: none;
-}
-
-.main-wrapper .image-gallery .imag-10 {
-  background: url("../asset/image/china.jpg");
+  background: url("../asset/image/norway.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -336,56 +334,75 @@
 }
 
 .footer-wrapper {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  font-family: "Thasadith", sans-serif;
+  font-size: 1em;
 }
 
-.footer-wrapper .footer-media-icons-wrapper,
-.footer-wrapper .footer-last div {
+.footer-wrapper .footer-media-icons-wrapper {
   display: none;
+  background-color: black;
+  color: #fff;
+  grid-template-columns: 4fr 1fr 4fr;
+  grid-template-rows: 50px;
+}
+
+.footer-wrapper .footer-media-icons-wrapper .social-media-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  place-items: center center;
+}
+
+.footer-wrapper .footer-media-icons-wrapper .location-icon {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center center;
 }
 
 .footer-wrapper .footer-contact {
   background-color: #000;
   color: #fff;
-  font-family: "Thasadith", sans-serif;
-  font-size: 1em;
-  font-weight: 600;
   display: grid;
+  font-weight: 550;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 60px);
-  padding: 20px 0;
-}
-
-.footer-wrapper .footer-contact h1 {
-  font-size: 1em;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.footer-wrapper .footer-contact .subscribe,
-.footer-wrapper .footer-contact .contact,
-.footer-wrapper .footer-contact .about {
+  grid-template-rows: 50px 100px;
+  place-items: center center;
   text-align: center;
 }
 
-.footer-wrapper .footer-contact .subscribe .submit {
+.footer-wrapper .footer-contact .submit {
   background-color: darkgrey;
-  padding: 0 10px;
+  width: 70px;
+  padding: 0 5px;
 }
 
-.footer-wrapper .footer-last ul {
+.footer-wrapper .footer-last {
   background-color: #272626;
   color: #fff;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-  grid-template-rows: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-wrapper .footer-last ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  grid-template-rows: 50px;
   place-items: center center;
+  padding-right: 10px;
+}
+
+.footer-wrapper .info {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
   .header-wrapper {
     display: grid;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 6fr 4fr;
   }
   .header-wrapper .title a {
     display: flex;
@@ -393,6 +410,10 @@
     align-items: center;
     padding-left: 60px;
     height: 100%;
+  }
+  .header-wrapper nav i span {
+    display: inline-block;
+    padding-left: 3px;
   }
   .main-wrapper {
     display: grid;
@@ -564,11 +585,16 @@
     background-color: #000;
     color: #fff;
     display: grid;
-    grid-template-columns: 6fr 3fr 3fr;
+    grid-template-columns: 2fr 4fr;
     grid-template-rows: 150px;
     place-items: center center;
-    padding-left: 20px;
+    padding: 0 20px;
     text-align: center;
+  }
+  .footer-wrapper .footer-contact .contact-about {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;
   }
   .footer-wrapper .footer-contact .submit {
     background-color: darkgrey;
@@ -587,12 +613,12 @@
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-rows: 50px;
     place-items: center center;
-    padding-right: 10px;
   }
   .footer-wrapper .info {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding-right: 20px;
   }
 }
 
@@ -612,5 +638,8 @@
   }
   .main-wrapper h1 {
     grid-column: 1/-1;
+  }
+  .footer-wrapper .contact-about .contact {
+    margin-right: 50px;
   }
 }

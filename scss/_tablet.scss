@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
   .header-wrapper {
     display: grid;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 6fr 4fr;
 
     .title a {
       display: flex;
@@ -9,6 +9,13 @@
       align-items: center;
       padding-left: 60px;
       height: 100%;
+    }
+
+    nav {
+      i span {
+        display: inline-block;
+        padding-left: 3px;
+      }
     }
   }
 
@@ -216,11 +223,17 @@
       background-color: #000;
       color: #fff;
       display: grid;
-      grid-template-columns: 6fr 3fr 3fr;
+      grid-template-columns: 2fr 4fr;
       grid-template-rows: 150px;
       place-items: center center;
-      padding-left: 20px;
+      padding: 0 20px;
       text-align: center;
+
+      .contact-about {
+        display: flex;
+        flex-direction: row;
+        justify-items: space-around;
+      }
 
       .submit {
         background-color: darkgrey;
@@ -241,7 +254,6 @@
         grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
         grid-template-rows: 50px;
         place-items: center center;
-        padding-right: 10px;
       }
     }
 
@@ -249,6 +261,7 @@
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
+      padding-right: 20px;
     }
   }
 }
