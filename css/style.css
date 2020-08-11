@@ -344,6 +344,7 @@
   grid-template-rows: 400px 150px 300px;
   justify-items: center;
   margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .detail-wrapper .details {
