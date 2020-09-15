@@ -1,0 +1,6 @@
+@mixin set-background-image($url) {
+  background: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
